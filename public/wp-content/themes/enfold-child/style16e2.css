@@ -1,0 +1,2404 @@
+/*
+Theme Name: Enfold Child
+Theme URI: http://www.kriesi.at/themes/enfold/
+Template: enfold
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Description: A superflexible and responsive Business Theme by Kriesi - Update notifications available on twitter, facebook and via newsletter: Follow me on twitter - Join the Facebook Group - Subscribe to our Newsletter
+Version: 3.8.1484151146
+Updated: 2017-01-11 16:12:26
+
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Import
+ * 2.0 - Fonts
+ * 3.0 - Common Style
+ * 4.0 - Header Style
+ * 5.0 - Footer Style
+ * 6.0 - Content Style
+ * 7.0 - Index Style
+ * 8.0 - Page Style
+    * 8.1 - Front-Page Style
+    * 8.2 - ESSD-Page Style
+    * 8.3 - PS-Page Style
+    * 8.4 - HBP-Page Style
+    * 8.5 - SA-Page Style
+    * 8.6 - Employer-Common-Page Style
+    * 8.7 - Contact-Page Style
+    * 8.8 - Jobseeker-Page Style
+ * 9.0 - Single Style
+ * 10.0 - Search Style
+ * 11.0 - Category Style
+ * 12.0 - Sidebar Style
+ * 13.0 - Breakpoints
+ * 14.0 - WooCommerce Elements
+ * 15.0 - UIs and Buttons
+ * 16.0 - Testimonials Page Style
+ * 17.0 - Career Guide and Gallery Style
+ * 18.0 - Others
+ * -----------------------------------------------------------------------------
+ */
+
+/* -----------------------------------------------------------------------------
+   1.0 - Import
+------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700i');
+
+
+
+
+/* -----------------------------------------------------------------------------
+   2.0 - Fonts
+------------------------------------------------------------------------------*/
+
+h1,h2,h3,h4,h1 a, h2 a
+{
+   font-family: 'Playfair Display', serif;
+}
+h5,h6,p,span,a,input,div
+{
+    font-family: 'Lato', sans-serif;
+}
+p {
+    font-size: 15px;
+    line-height: 1.7em;
+}
+.entry-content-wrapper li 
+{
+    font-size: 15px;
+    line-height: 1.7em;
+}
+.page-id-73 .avia-image-container p:first-child
+{
+    font-size:10px !important;
+    line-height: 10px !important;
+}
+
+/* -----------------------------------------------------------------------------
+   3.0 - Common Style
+------------------------------------------------------------------------------*/
+
+body .column-top-margin 
+{
+    margin-top: 0 !important;
+}
+.template-page .entry-content-wrapper h1, .template-page .entry-content-wrapper h2 {
+    letter-spacing: 1px;
+  
+}  
+/*#mobile-advanced ul
+{
+    display:none;
+}*/
+
+.avia-breadcrumbs
+{
+    background-color:transparent;
+    left:0;
+}
+
+#top .home-newsletter-signup-bar input[type="email"]
+{
+    padding-top:15px;
+    padding-bottom:18px;
+    padding-left:20px;
+    padding-right:20px;
+    
+}
+
+#top .home-newsletter-signup-bar .form_element_fourth
+{
+    display: inline;
+    width: 28%;
+    float: left;
+    margin-bottom:0;
+}
+
+
+#top .home-newsletter-signup-bar .form_element_three_fourth
+{
+    display: inline;
+    width: 70%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom:0;
+}
+
+@media (max-width:910px){
+    #top .home-newsletter-signup-bar .form_element_fourth
+    {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom:10px;
+    }
+    #top .home-newsletter-signup-bar .form_element_three_fourth
+    {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom:0;
+    }
+    
+}
+/* -----------------------------------------------------------------------------
+   4.0 - Header Style
+------------------------------------------------------------------------------*/
+
+#header_meta #header-email, #header_meta #header-phone
+{
+    display:inline;
+}
+#header_meta #header-email
+{
+    padding-right:30px;
+}
+
+#header_meta #header-phone
+{
+    padding-left:30px;
+}
+#header_meta > div.container
+{
+    text-align:center;
+}
+#header_meta > div.container > .phone-info
+{
+    float:none;
+    margin:auto;
+}
+#header_meta
+{
+    background:#3b3a3a;
+}
+
+#header_meta span,#header_meta a
+{
+    color:#fff;
+    font-weight:normal;
+    font-size:12px;
+}
+#header_meta a:hover
+{
+    color:#ccc !important;
+    text-decoration:none;
+}
+#header_meta #menu-item-16 a:before
+{
+    content:"\f007    ";
+    font-family: FontAwesome;
+}
+#header_main .avia_mega_div > ul > li > span
+{
+    color:rgba(1,48,104,1);
+}
+#header_main .avia_mega_div > ul > li:nth-of-type(3) > span
+{
+    color:#fff !important;
+}
+#header_main .avia_mega_div > ul > li > ul > li > a > span
+{
+    font-size:14px !important;
+}
+#header .mega_menu_title {
+    font-size: 15px !important;
+}
+#header_main #avia-menu > li > a {
+    font-size:13px;
+    padding:0 10px;
+}
+#header_main .avia-bullet
+{
+    display:none;
+}
+#header_main .avia_mega_div > ul > li:nth-of-type(1)
+{
+    border-right: 1px solid black !important;
+    width: 15%;
+}
+#header_main .avia_mega_div > ul > li:nth-of-type(2)
+{
+    padding-left: 35px;
+    width: 35%;
+}
+
+#header_main .avia_mega_div > ul > li:nth-of-type(3)
+{
+    width: 30%;
+    border-right: 1px solid black !important;
+}
+#header_main .avia_mega_div > ul > li:nth-of-type(4)
+{
+    padding-left: 35px;
+}
+#header_main #menu-item-787 > ul
+{
+    width:500px;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+#header_main #menu-item-545 > ul > li > ul
+{
+        left: 207px;
+}
+#header_main #menu-item-545 .fa-chevron-right
+{
+        font-size: 13px;
+}
+#header_main .main_menu ul > li > ul > li > ul > li > a
+{
+    padding-top:0;
+    padding-bottom:0;
+}
+#header_main .main_menu ul > li > ul > li .fa
+{
+    float:right;
+    padding-top: 4px;
+}
+#header_main .main_menu .sub-menu ul
+{
+    padding:10px;
+}
+#top .av-main-nav ul a
+{
+    font-size:13px;
+}
+#header_main #menu-item-1785
+{
+    display:none;
+}
+#header_main .av-logo-container img
+{
+    height:100%;
+}
+/*av-main-nav  li  a
+{
+    padding: 0 25px;
+}*/
+/* -----------------------------------------------------------------------------
+   5.0 - Footer Style
+------------------------------------------------------------------------------*/
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6
+{
+    color:#fff !important;
+}
+
+#footer h3 {
+    font-size: 18px;
+}
+
+#footer div.av_one_fourth:nth-of-type(1)
+{
+    width:40%;
+}
+#footer div.av_one_fourth:nth-of-type(2)
+{
+    width:10.75%;
+}
+#footer div.av_one_fourth:nth-of-type(3)
+{
+    width:10.75%;
+}
+#footer div.av_one_fourth:nth-of-type(4)
+{
+    width:20.5%;
+}
+.jcfooterlogo
+{
+    padding-bottom:13px;
+}
+
+#footer p {
+    font-size: 14px !important;
+}
+
+#footer .wpcf7 input[type="email"]
+{
+    padding-top:15px;
+    padding-bottom:18px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:0;
+}
+
+
+/* -----------------------------------------------------------------------------
+   6.0 - Content Style
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+   7.0 - Index Style
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+   8.0 - Page Style
+------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------
+   8.1 - Front-Page Style
+------------------------------------------------------------------------------*/
+
+#jobsearch_widget form
+{
+    background-color:rgba(192, 192, 192, 0.46);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size:15px;
+}
+#jobsearch_widget legend, #jobsearch_widget label, #jobsearch_widget .searchBoxFieldContainer a
+{
+    display:none;
+}
+#jobsearch_widget fieldset
+{
+    margin-bottom:0;
+}
+#jobsearch_widget form:before
+{
+    content: "SEARCH JOBS";
+    display: block;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+#jobsearch_widget .searchBoxFieldContainer button
+{
+    width: 100%;
+    border-width: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #d6a353;
+    color: #fff;
+    font-weight: bold;
+    -webkit-transition: background-color .3s; /* Safari */
+    transition: background-color .3s;
+}
+#jobsearch_widget .searchBoxFieldContainer button:hover
+{
+    background-color: #b68b49;
+}
+#av_section_slider div.first h1
+{
+    font-size:70px ;
+    font-weight:bold;
+    line-height: 50%;
+    position: relative;
+    font-family: 'Lato', sans-serif !important;  
+    color: #003169 !important;
+}
+#av_section_slider div.first h2
+{
+    font-size:35px;
+    font-family: 'Lato', sans-serif !important;
+    text-transform: uppercase !important;   
+    color:#003169 !important;
+}
+#a
+#av_section_slider div.first h1 .slider-bigger
+{
+    font-size:80px;
+    
+}
+#av_section_slider div.first p
+{
+    font-size:16px;
+    line-height:20px;
+    font-weight:normal;
+    color: #003169 !important;
+    margin-top: -5px; 
+}
+#av_section_slider div.first h1, #av_section_slider div.first p
+{
+    color: #003169 !important;
+}
+
+.avia_textblock {
+font-size: 15px;
+}
+#home-jumpstart .av_two_fifth h3
+{
+    font-size:2em;
+    font-weight:bold;
+    color:#d6a353;
+}
+#home-jumpstart .av_two_fifth p
+{
+    font-size:15px;
+    font-weight:normal;
+}
+#home-jumpstart > .container > .template-page
+{
+    padding-bottom:0;
+}
+#home-jumpstart .avia-button span
+{
+    color:#000;
+}
+#comm-join p
+{
+    color:#fff;
+    font-weight:bold;
+}
+#comm-join a 
+{
+    color:  #003169 !important;
+    font-weight:bold;
+    border-width:0 !important;
+    background-color:#fff !important;
+    padding: 16px !important;
+    margin-top: 10px;
+    height: 45px !important;
+}
+#comm-btn 
+{
+  color:  #003169 !important;  
+  margin-left: 125px;
+  background-color:#fff !important;
+   padding-top: 17px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#av_section_1 .av_one_fourth
+{
+    margin-left:2%;
+    width:23.5%
+}
+#av_section_1 .first
+{
+    margin-left:0;
+}
+#av_section_1 .av_one_fourth h4
+{
+    font-size:15px;
+    color:#d6a353;
+    font-weight:normal;
+}
+#av_section_1 .avia-button
+{
+    color:#fff;
+    font-weight:bold;
+}
+#av_section_2 h1
+{
+    color:#fff;
+}
+
+#av_section_2 h3
+{
+    color:#d6a353;
+}
+#av_section_3 .avia-button
+{
+    color:#000 !important;
+}
+#av_section_4 blockquote p
+{
+    font-size:20px;
+    color:#424242;
+    letter-spacing:.5px;
+}
+#av_section_4 blockquote
+{
+    border-left:none;
+    position:relative;
+}
+#av_section_4 blockquote:before
+{
+    content:"“";
+    position:absolute;
+    font-size: 200px;
+    font-family: serif;
+    top: 30px;
+    z-index: -1;
+
+}
+
+#av_section_4 blockquote:after
+{
+    content:"”";
+    position:absolute;
+    font-size: 200px;
+    font-family: serif;
+    right: 20px;
+    z-index: -1;
+ 
+}
+#av_section_4 h3
+{
+    font-size:2.3em;
+    font-weight:bold;
+}
+#av_section_4 h4
+{
+    color:#d6a353;
+    font-size:20px;
+}
+#av_section_4 .avia-button span
+{
+    color:#000;
+}
+
+#home-contact-us-section
+{
+    color:#fff;
+}
+#home-contact-us-section .wpcf7-response-output
+{
+    color:#003169;
+}
+
+#home-contact-us-section div.column-top-margin
+{
+    margin-top:10px;
+}
+
+#home-contact-us-section .flex_cell_inner .av_two_fifth .av-icon-char
+{
+    position:relative;
+    top:20px;
+}
+
+ .flex_cell_inner .av_two_fifth  .av-icon-char
+{
+    padding-right:22px;
+}
+#home-solutions h3
+{
+    color:#edae44;
+    font-size: 22px;
+}
+#home-solutions h1
+{
+    font-size: 34px;
+    text-transform: capitalize; 
+}
+
+#home-solutions h5 {
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 1em;
+
+}
+
+#home-contactus p
+{
+    line-height:1em;
+}
+.main_color blockquote {
+     color: #fff !important;
+}
+.page-id-9 #home-newsletter-signup-bar 
+{
+    background-color:#003169;
+}
+.page-id-9 #home-newsletter-signup-bar fieldset #element_avia_0_1 input,
+.page-id-9 #home-newsletter-signup-bar fieldset .av-last-visible-form-element .button
+{
+    height: 55px;
+}
+.page-id-9 #home-newsletter-signup-bar form,
+.page-id-9 #home-newsletter-signup-bar fieldset
+{
+    margin-bottom:0;
+}
+#home-careerguide a {
+     color: #003169  !important;
+}
+
+@media (max-width:767px){
+    .page-id-9 #wrap_all #main #sa-half-image .home-half-left
+    {
+        display:table-footer-group;
+    }
+    .page-id-9 #wrap_all #main #sa-half-image .home-half-left > div
+    {
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:8%;
+        padding-right:8%;
+    }
+    
+    .page-id-9 #wrap_all #main #sa-half-image .home-half-pic
+    {
+        
+        min-height:200px;
+        background-size:cover;
+        background-position: top center !important;
+    }
+    
+}
+
+/* -----------------------------------------------------------------------------
+   8.2 - ESSD-Page Style
+------------------------------------------------------------------------------*/
+.page-id-75 h1,
+.page-id-75 h2,
+.page-id-75 h3,
+.page-id-75 h4,
+.page-id-75 h5,
+.page-id-75 h6
+{
+ color: rgba(32,32,32,1);
+}
+
+#essd-lookingglass .avia-button
+{
+    color: rgba(32,32,32,1);    
+}
+
+#essd-schedule form
+{
+    display:none;
+}
+
+#essd-half-image h3
+{
+    font-size:2em;
+}
+#essd-gotocareer h1
+{
+    color:#fff;
+    font-size:34px;
+    
+}
+#essd-gotocareer h3
+{
+    color:#fff;
+    font-size:2em;
+    
+}
+#essd-slider h1
+{
+    font-size: 2.5em !important;
+       font-family: 'Lato', sans-serif !important;
+       font-weight:bold;
+       margin-bottom: -2px !important;
+}
+#essd-slider h2
+{
+    font-size: 1.8em !important;
+       font-family: 'Lato', sans-serif !important;
+       margin-bottom: 0 !important;
+       font-weight:bold;
+}
+
+#essd-icons h4
+{
+    font-size: 22px !important;
+}
+#essd-icons h3
+{
+    font-size: 22px !important;
+}
+
+#essd-icons h5
+{
+    font-size: 16px !important;
+    line-height: 1.5em !important; 
+}
+
+.remodal .ajax-loader
+{
+    display: block !important;
+    margin: auto !important;
+}
+
+#eesd-contact h1, #eesd-contact h2, #eesd-contact h3, #eesd-contact p {
+    color: #fff !important;
+    }
+/* -----------------------------------------------------------------------------
+   8.3 - PS-Page Style
+------------------------------------------------------------------------------*/
+
+.page-id-79 #main h1,
+.page-id-79 #main h2,
+.page-id-79 #main h3,
+.page-id-79 #main h4,
+.page-id-79 #main h5,
+.page-id-79 #main h6
+{
+    color:#111183;
+}
+#ps-slider h1
+{
+   font-size: 3em !important;
+   font-family: 'Lato', sans-serif !important;
+   font-weight:bold;
+}
+#ps-slider h2
+{
+    font-size: 1.8em !important;
+    font-family: 'Lato', sans-serif !important;
+    margin-bottom: -2px !important;
+    font-weight:bold;
+}
+#ps-icons h4
+{
+    font-size: 22px;
+}
+#ps-half-image h3
+{
+    font-size:2em;
+}
+#ps-contactus h1
+{
+    color:#ffffff !important;
+    font-size: 34px !important;
+}
+#ps-contactus h3
+{
+    color:#fff !important;
+}
+#ps-mvp p
+{
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+#ps-events h1 {
+    color: #111183 !important;
+}
+#ps-events h2 {
+    color: #111183 !important;
+}
+#ps-events h3 {
+    color: #111183 !important;
+}
+#ps-events h4 {
+    color: #111183 !important;
+}
+#ps-half-image h1 {
+    color: #111183 !important;
+}
+#ps-half-image h2 {
+    color: #111183 !important;
+}
+#ps-half-image h3 {
+    color: #111183 !important;
+}
+#ps-subcontent h1 {
+    text-transform: capitalize; 
+}
+#tease1 {
+    color: #111183 !important;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;  
+}
+.ps-mvp-con {
+    padding: 20px 0;
+}
+.vp-name {
+    font-size: 16px;
+}
+#ps-mvp p
+{
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+#ps-gotocareer a {
+    color: #111183 !important;
+}
+/* -----------------------------------------------------------------------------
+   8.4 - HBP-Page Style
+------------------------------------------------------------------------------*/
+.page-id-81 #menu-item-545
+{
+    display:none;
+}
+.page-id-992 #menu-item-545 {
+    display:none;
+    }
+.page-id-2309 #menu-item-545 {
+     display:none;
+    }
+
+.page-id-2608 #menu-item-545 {
+     display:none;
+    }
+
+.page-id-2613 #menu-item-545 {
+     display:none;
+    }
+
+.page-id-2640 #menu-item-545 {
+     display:none;
+    }
+
+.page-id-2622 #menu-item-545 {
+     display:none;
+    }
+
+.page-id-2585 #menu-item-545 {
+     display:none;
+    }
+
+.page-id-2603 #menu-item-545 {
+     display:none;
+    }
+
+.page-id-2617 #menu-item-545 {
+     display:none;
+    }
+.page-id-2650 #menu-item-545 {
+     display:none;
+    }
+.page-id-2636 #menu-item-545 {
+     display:none;
+    }
+    
+    .page-id-2856 #menu-item-545 {
+     display:none;
+    }
+
+
+
+
+
+.av-layout-grid-container {
+    height: 400px !important; 
+}
+
+
+#hbp-slider h1
+{
+   color: #af0126 !important;
+  font-size: 3em !important;
+       font-family: 'Lato', sans-serif !important;
+       font-weight:bold;
+       margin-bottom: -2px !important;
+   
+}
+
+
+#hbp-slider h2
+{
+       color: #af0126 !important;
+    font-size: 2.2em !important;
+       font-family: 'Lato', sans-serif !important;
+       margin-bottom: -5px !important;
+       font-weight:bold;
+}
+#hbp-slider h3
+{
+       color: #af0126 !important;
+    font-size: 1.5em !important;
+       font-family: 'Lato', sans-serif !important;
+       margin-bottom: 0 !important;
+       font-weight:bold;
+}
+
+#hbp-join p
+{
+    color:#fff;
+    font-weight:bold;
+}
+#hbp-join a
+{
+    color: #af0126 !important;
+    font-weight:bold;
+    border-width:0 !important;
+    background-color:#fff !important;
+    padding-top: 17px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+}
+#hbp-half-image h3
+{
+    color: #af0126 !important;
+    font-size:2em;
+}
+#hbp-4-column h1,#hbp-4-column h3
+{
+    color: #af0126 !important;
+    
+}
+
+#hbp-4-column h3
+{
+
+    font-size: 22px !important; 
+    
+}
+
+#hbp-4-column .avia-button span
+{
+    color:#fff;
+}
+#hbp-icons h1
+{
+    color: #af0126;
+}
+#hbp-icons h2
+{
+    color: #af0126;
+}
+
+#hbp-icons h3
+{
+    color: #af0126 !important;
+}
+
+#hbp-icons h4
+{
+    color: #af0126;
+    font-size: 22px;
+}
+#hbp-icons h5
+{
+    color:#ffffff;
+}
+#hbp-contactus h1
+{
+    color:#ffffff !important;
+    font-size: 34px !important;
+}
+#hbp-leadership h1
+{
+    color: #af0126;
+}
+#hbp-leadership h3, #hbp-leadership .av_toggle_section .toggler
+{
+    color: #af0126 !important;
+}
+#hbp-leadership h3
+{
+    font-size:2em;
+}
+#hbp-btn .avia-button.avia-position-left
+{
+  margin-left: 125px;
+}
+#hbp-leadership .av_toggle_section .toggler
+{
+    font-size:1.35em;
+    font-weight:bold;
+}
+#hbp-leadership .av_toggle_section .toggler .hor_icon,#hbp-leadership .av_toggle_section .toggler .vert_icon
+{
+    border-color:#AAA;
+}
+/* -----------------------------------------------------------------------------
+   8.5 - SA-Page Style
+------------------------------------------------------------------------------*/
+#sa-slider h1
+{
+    color:#25b538;
+    font-size: 3em !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight:bold;
+    margin-bottom: 0 !important; 
+}
+#sa-slider h2
+{
+     color:#25b538;
+    font-size: 1.5em !important;
+       font-family: 'Lato', sans-serif !important;
+       margin-bottom: -3px !important;
+       font-weight:bold;
+}
+#sa-slider h3
+{
+    color:#25b538;
+    font-size: 1.3em !important;
+    font-family: 'Lato', sans-serif !important;
+    margin-bottom: 0 !important;
+    font-weight:bold;
+    text-transform: uppercase !important;
+}
+#sa-half-image h3
+{
+    color:#25b538;
+    font-size:2em;
+}
+#sa-icons h1
+{
+    color:#25b538;
+}
+#sa-icons h3
+{
+    font-size: 22px !important;
+    color:#25b538;
+}
+#sa-icons h4
+{
+    color:#25b538;
+    font-size: 22px;
+}
+#sa-icons .button1 a,#sa-icons .button2 a
+{
+    border-color:#25b538 !important;
+    padding-top: 10px !important;
+}
+#sa-icons .button1 a
+{
+    background-color:#25b538 !important;
+}
+#sa-icons .button1 a span
+{
+    color:#fff;
+}
+#sa-icons .button2 a
+{
+    background-color:#fff;
+}
+#sa-icons .button2 a span
+{
+    color:#25b538;
+}
+#sa-content-slider h3,#sa-content-slider p
+{
+    color:#fff;
+}
+#sa-content-slider h3
+{
+    font-size:2em;
+}
+#sa-content-slider p:nth-of-type(2)
+{
+    font-size:1.35em;
+}
+#sa-content-slider p:nth-of-type(1)
+{
+    font-size:1em;
+}
+#sa-contactus h1
+{
+    color:#ffffff !important;
+    font-size: 34px !important;
+}
+#sa-gotocareer a {
+    color: #25b538 !important;
+}
+
+/* -----------------------------------------------------------------------------
+   8.6 - EDI-Page Style
+------------------------------------------------------------------------------*/
+#edi-slider h1
+{
+   font-size: 2.6em !important;
+   font-family: 'Lato', sans-serif !important;
+   font-weight:bold;
+   color: #fcb134 !important;
+}
+#edi-slider h2
+{
+    font-size: 1.8em !important;
+    font-family: 'Lato', sans-serif !important;
+    margin-bottom: -2px !important;
+    font-weight:bold;
+    color: #fcb134 !important; 
+}
+#edi-icons h1
+{
+    color: #fcb134 !important;
+}
+#edi-icons h3
+{
+    color: #fcb134 !important;
+}
+#edi-icons h4
+{
+    font-size: 22px;
+    color: #fcb134!important;
+}
+#edi-half-image h3
+{
+    font-size:2em;
+    color: #fcb134 !important;
+}
+#edi-contactus h1
+{
+    color:#ffffff !important;
+    font-size: 34px !important;
+}
+#edi-gotocareer a {
+    color: #003169 !important;
+}
+
+/* -----------------------------------------------------------------------------
+   8.5 - Zenger Folkman-Common-Page Style
+------------------------------------------------------------------------------*/
+.page-id-2706 #menu-item-545
+{
+    display:none;
+}
+#zenger-slider h1
+{
+   color: #006384 !important;
+  font-size: 3em !important;
+       font-family: 'Lato', sans-serif !important;
+       font-weight:bold;
+       margin-bottom: -2px !important;
+   
+}
+
+
+#zenger-slider h2
+{
+       color:#006384 !important;
+    font-size: 2.2em !important;
+       font-family: 'Lato', sans-serif !important;
+       margin-bottom: -5px !important;
+       font-weight:bold;
+}
+#zenger-slider h3
+{
+       color: #006384 !important;
+    font-size: 1.5em !important;
+       font-family: 'Lato', sans-serif !important;
+       margin-bottom: 0 !important;
+       font-weight:bold;
+}
+
+
+#zenger-icons h1
+{
+    color:#006384;
+}
+#zenger-icons h3
+{
+    font-size: 22px !important;
+    color:#006384;
+}
+#zenger-icons h4
+{
+    color:#006384;
+    font-size: 22px;
+}
+
+
+#zenger-accordion h1
+{
+    color: #006384 !important;
+}
+
+#zenger-accordion h3, #zenger-accordion .av_toggle_section .toggler
+{
+    color: #006384 !important;
+}
+
+#zenger-accordion .av_toggle_section .toggler
+{
+    font-size:1.35em;
+    font-weight:bold;
+}
+#zenger-accordion .av_toggle_section .toggler .hor_icon,#zenger-accordion .av_toggle_section .toggler .vert_icon
+{
+    border-color:#AAA;
+}
+
+/* -----------------------------------------------------------------------------
+   8.6 - employer-Common-Page Style
+------------------------------------------------------------------------------*/
+.lglass {
+    font-size: 1em !important;
+}
+
+#top .av-subnav-menu > li > a {
+    padding: 0px 10px 0px 12px;
+    display: block;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #fff;
+    font-size: 15px !important;
+    background-color: #003169;
+    color: #fff;
+
+    
+}
+
+#top .av-submenu-container {
+    background-color: #003169;
+}
+
+.employer-half-image .flex_cell
+{
+    min-height:400px;
+}
+.employer-slider p
+{
+    color:#fff;
+    line-height: 1.6em !important
+}
+.employer-slider a
+{
+    border-color:#fff !important;
+}
+.employer-vp h3
+{
+    font-size:2em;
+}
+.employer-gotocareer p
+{
+    color:#fff;
+    font-size:1em;
+}
+.employer-gotocareer a
+{
+    border-color:#fff !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-weight:bold;
+}
+.employer-icons .avia_textblock > h3
+{
+    font-size:2em;
+}
+.employer-icons2 .avia_textblock > h3
+{
+    font-size:1.5em;
+}
+.employer-contactus,.employer-contactus h1, 
+{
+    color:#fff;
+}
+.employer-contactus h1
+{
+    font-size:34px;
+}
+.employer-contactus h3
+{
+    font-size:2em;
+}
+.employer-contactus .av_one_third
+{
+    border:solid 1px #fff;
+}
+.employer-slider:nth-of-type(2)
+{
+    display:none;
+}
+#top .av-share-box ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D0D0D0;
+    display: inline-table;
+    width: 50%;
+    text-align: center;
+    table-layout: fixed;
+    background: transparent;
+    margin-bottom: 10px; 
+}
+.av-share-box .av-share-link-description {
+    margin-bottom: 10px;
+}
+.title_container .breadcrumb {
+  margin-top: -12px !important;
+}
+
+
+/* -----------------------------------------------------------------------------
+   8.7 - Contact-Page Style
+------------------------------------------------------------------------------*/
+
+#contact-body .avia_textblock p
+{
+    margin:0;
+  /*  font-weight:bold;*/
+    font-size: 15px; 
+}
+
+#contact-body h3 {
+     color: #d6a353 ;
+     font-size: 22px; 
+ }
+
+#contact-body h4 {
+     color: #d6a353;
+     font-size: 16px; 
+ }
+
+
+ 
+ 
+/* -----------------------------------------------------------------------------
+   8.8 - Contact-Page Style
+------------------------------------------------------------------------------*/
+#jobseeker_curl .content-table .commonWrapper:nth-of-type(2)
+{
+    overflow-x:scroll;
+}
+#jobseeker_curl .content-footer .l3
+{
+    display:none;
+}
+
+.page-id-3007 #contact-body .image-overlay.overlay-type-extern .image-overlay-inside:before {
+    content: '\e805' !important;
+    font-family: 'entypo-fontello';
+}
+
+
+
+
+/* -----------------------------------------------------------------------------
+   9.0 - Single Style
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+   10.0 - Search Style
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+   11.0 - Category Style
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+   12.0 - Sidebar Style
+------------------------------------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------------------------------
+   13.0 - Breakpoints
+------------------------------------------------------------------------------*/
+@media (max-width: 449px) {
+    
+    #testimonial-main-masonry figcaption
+    {
+        transform: rotateX(0deg);
+        opacity: 1;
+        background-color: rgba(0,0,0,0.5) !important;
+    }
+    
+    #header_meta #header-email, #header_meta #header-phone
+    {
+        display:block;
+    }
+    
+    #header_meta #header-email
+    {
+        padding-right:0;
+    }
+    
+    #header_meta #header-phone
+    {
+        padding-left:0;
+    }
+    #header .mega_menu_title {
+        font-size: 15px !important;
+    }
+    
+    
+    # div.first h1 {
+    font-size: 40px;
+
+    }
+    
+    #av_section_slider div.first h2 {
+    font-size: 25px;
+    color: #fff !important;
+    }
+     #av_section_slider div.first p {
+    color: #fff !important;
+    }
+    
+    .testimonial-slider blockquote p, .testimonial-slider h3 {
+    font-size: 12px;
+    }
+    
+    .testimonial-slider h4 {
+    font-size: 10px;
+    }
+    
+    .testimonial-slider .avia-caption-content{
+    padding: 10px 0;
+    }
+    
+    .testimonial-slider .avia-button {
+    font-size: 10px;
+    }
+    
+    .employer-vp h3 {
+    font-size: 1.8em;
+    }
+    
+    #ps-half-image h3 {
+    font-size: 1.8em;
+    }
+    
+    #essd-slider .av_textblock_section p, #ps-slider .av_textblock_section p, #hbp-slider .av_textblock_section p, #sa-slider .av_textblock_section p {
+    color: #fff !important;
+    }
+    #essd-gotocareer h3 {
+    font-size: 1.8em;
+    }
+    
+    .employer-contactus h3 {
+    font-size: 1.8em;
+    }
+    .employer-gotocareer p {
+    font-size: 1em; 
+    }
+    
+    #testimonial-main-slider p {
+    font-size: 1em;
+    }
+    
+    .testimonial-body h1 {
+    font-size: 2em;
+    }
+    
+    #testimonial-slider {
+    height: 200px;
+    }
+    
+    .template-page .entry-content-wrapper h1 {
+    font-size: 1.8em;
+    
+    }
+    .template-page .entry-content-wrapper h2  {
+    font-size: 1.5em;
+    }
+    
+    .footer-color p {
+        font-size: 14px !important;
+    }
+    
+    #testimonial-main-masonry .av-inner-masonry-content-pos-content .av-masonry-entry-content
+    {
+        display:none;
+    }
+    #testimonial-body blockquote p {
+        font-size: 15px !important;
+        }
+    h1 {
+        font-size: 30px !important; 
+    }
+    #home-solutions h1
+{
+    font-size: 1.8em;
+}
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+    
+    #testimonial-main-masonry .av-inner-masonry-content-pos-content .av-masonry-entry-content
+    {
+        display:none;
+    }
+    
+    #essd-slider .av_textblock_section,
+    #ps-slider .av_textblock_section,
+    #hbp-slider .av_textblock_section,
+    #edi-slider .av_textblock_section,
+    #sa-slider .av_textblock_section,
+    #zenger-slider .av_textblock_section
+    {
+        background-color: rgba(255,255,255,0.3);
+        padding: 15px;
+    }
+    
+    #essd-slider .av_textblock_section p,
+    #ps-slider .av_textblock_section p,
+    #hbp-slider .av_textblock_section p,
+    #edi-slider .av_textblock_section p,
+    #sa-slider .av_textblock_section p,
+    #zenger-slider .av_textblock_section p
+    {
+        /*color:#000;*/
+    }
+    
+    #av_section_slider div.first h1
+    {
+        font-size:50px ;
+        color: #fff !important;
+    }
+    #jobsearch_widget .container
+    {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    #testimonial-main-masonry figcaption
+    {
+        /*display:none;*/
+    }
+
+    #home-contact-us-section .flex_cell_inner .av_two_fifth
+    {
+        width:30% !important;
+        padding-right:15px;
+    }
+    #home-contact-us-section .flex_cell_inner .av_three_fifth
+    {
+        width:70% !important;
+        padding-left:15px;
+    }
+    #home-contact-us-section .flex_cell_inner .av_one_fifth
+    {
+        width:20% !important;
+    }
+    #home-contact-us-section .av_two_fifth .av-icon-char
+    {
+        padding-right:0;
+    }
+    
+    .employer-icons .col-md-3,.employer-icons .col-md-9,#sa-icons .av_one_half
+    {
+        text-align:center;
+    }
+    #sa-icons .av_one_half .avia-button-wrap
+    {
+        display:inline-block;
+        float:none;
+    }
+    .employer-vp .av_two_third
+    {
+        padding-top:0px !important;
+    }
+    .testimonial-body .flex_column
+    {
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
+    
+    .testimonial-slider blockquote p,.testimonial-slider h3
+    {
+        font-size:15px !important;   
+    }
+    .testimonial-slider .slideshow_caption
+    {
+        padding-top:0;
+    }
+    .testimonial-slider blockquote
+    {
+        display:none;
+    }
+    .testimonial-slider .avia-caption-content 
+    {
+        width:50%;
+    }
+    .testimonial-slider .slide-1 .avia-caption-content,.testimonial-slider .slide-3 .avia-caption-content
+    {
+        float:right;
+    }
+    .testimonial-slider .avia-button
+    {
+        margin-top: 0px !important;
+    }
+    
+    #ps-slider h1, #essd-slider h1, #sa-slider h1, #edi-slider h1 {
+    text-align: left !important;
+    }
+    
+    .employer-slider p {
+    text-align: left !important;
+    
+    }
+    #testimonial-body p
+    {
+    font-size: 16px;
+        line-height: 1.7em;
+        margin-bottom: 20px;
+    }
+    .employer-slider:nth-of-type(2)
+    {
+        display:inline;
+    }
+    .employer-slider:nth-of-type(1)
+    {
+        height: 130px;
+        
+    }
+     #av_section_slider:nth-of-type(1)
+    {
+        background-position: center center !important;
+    }
+    #message-vp-slider
+    {
+        background-position: center center !important;
+        height: 130px;
+    }
+   
+    #essd-slider:nth-of-type(1),
+    #ps-slider:nth-of-type(1),
+    #sa-slider:nth-of-type(1),
+    #edi-slider:nth-of-type(1),
+    #zenger-slider:nth-of-type(1)
+    {
+        background-position: top left !important;
+    }
+    #hbp-slider:nth-of-type(1),
+    {
+        background-position: top right !important;
+    }
+    
+    .employer-slider:nth-of-type(1) > div
+    {
+        display:none !important;
+    }
+    .employer-slider:nth-of-type(2) .flex_column
+    {
+        margin-bottom: 0px !important;
+    }
+
+    #av_section_slider div.first h2, #av_section_slider div.first h1, #av_section_slider div.first p
+    {
+    color:#ffffff !important;
+    }
+
+.testibutton .avia-button {
+    height: 63px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+ 
+    #av_section_slider div.first h1
+    {
+        font-size:50px ;
+    }
+    div .av_one_fourth { width: 48% !important; }
+    
+    .testimonial-slider blockquote p,.testimonial-slider h3
+    {
+        font-size:15px !important;   
+    }
+    .testimonial-slider .slideshow_caption
+    {
+        padding-top:0;
+    }
+    #comm-join a {
+        height: 60px !important;
+        
+        }
+
+}
+@media (min-width: 768px) and (max-width: 870px) { 
+       #comm-join a {
+        height: 60px !important;
+        
+        }
+}
+@media (min-width: 992px) and (max-width: 1199px) {   
+    #header_main #avia-menu > li > a 
+    {
+        padding:0 6px;
+        font-size:12px;
+    } 
+
+}
+@media (min-width: 1200px) { 
+}
+@media only screen and (max-width: 1252px) and (min-width: 1036px) {
+   
+}
+@media only screen and (max-width: 1035px) and (min-width: 990px) {
+    
+}
+@media only screen and (max-width: 1065px) and (min-width: 754px) {
+    .page-id-9 .employer-slider p {
+    line-height: 1.3em !important;
+    }
+    
+}
+@media (max-width: 768px) {
+    #hbp-slider h1 {
+        color: #fff !important;
+        font-size: 30px !important;
+    }
+     #zenger-slider h1 {
+        color: #fff !important;
+        font-size: 30px !important;
+    }
+    #ps-slider h1 {
+        color: #fff !important;
+            font-size: 30px !important;
+    }
+    #edi-slider h1 {
+        color: #fff !important;
+        font-size: 30px !important;
+    }
+      #edi-slider h2 {
+        color: #fff !important;
+    }
+    #sa-slider h1 {
+        color: #fff !important;
+        font-size: 30px !important;
+    }
+    #essd-slider h1 {
+        color: #fff !important;
+            font-size: 30px !important;
+    }
+    #hbp-join a {
+        height: 50px !important;
+    }
+}
+@media (max-width: 480px) {
+    #av_section_slider div.first h1 {
+        font-size: 38px;
+    }
+    
+    .testimonial-slider h4 {
+        font-size: 10px !important; 
+    }
+    .responsive #top .slideshow_caption .avia-caption-content {
+        padding: 10px; 
+    }
+    .testimonial-slider blockquote p, .testimonial-slider h3 {
+        font-size: 12px !important; 
+    }
+   
+}
+
+@media (min-width: 480px) and (max-width: 1070px){
+    #home-newsletter-signup-bar fieldset #element_avia_0_1,
+    #home-newsletter-signup-bar fieldset .av-last-visible-form-element
+    {
+        width:49.5%;
+    }
+    #home-newsletter-signup-bar fieldset .av-last-visible-form-element .button
+    {
+        font-size:12px;
+    }
+}
+
+@media (max-width: 479px){
+    
+    #home-newsletter-signup-bar fieldset #element_avia_0_1,
+    #home-newsletter-signup-bar fieldset .av-last-visible-form-element
+    {
+        width:100%;
+    }
+}
+/* -----------------------------------------------------------------------------
+   14.0 - WooCommerce Elements
+------------------------------------------------------------------------------*/
+
+
+/* -----------------------------------------------------------------------------
+   15.0 - Uis and Button
+------------------------------------------------------------------------------*/
+
+.remodal .remodal-close
+{
+    left:unset;
+    right:0px;
+}
+.remodal .remodal-cancel
+{
+    display:none;
+}
+.remodal fieldset>p:nth-of-type(7),.remodal fieldset>p:nth-of-type(8)
+{
+    margin-bottom:0;
+}
+.remodal .wpcf7-submit
+{
+    width: 190px;
+    background-color: #01427c;
+    color: #fff;
+}
+.remodal .wpcf7-submit:hover
+{
+    background-color: #0f395e;
+}
+
+.remodal #downloadPdfBtn
+{
+    width: 190px;
+    background-color: #dfb164;
+    color: #fff;
+}
+.remodal #downloadPdfBtn:hover
+{
+    background-color: #c69c55;
+    text-decoration:none;
+}
+.avia-button
+{
+    background-color:transparent !important;
+    border-width:2px !important;
+    border-style:solid !important;
+    border-radius:0 !important;
+    height:50px;
+    padding-top:15px !important;
+}
+.avia-button span
+{
+    font-weight:bold;
+}
+
+#main select
+{
+    border-radius:0 !important;
+}
+
+#main input[type="submit"]
+{
+    background-color:#d6a353;
+    font-weight:bold;
+    color:#fff;
+    border-bottom-style:none;
+    border-radius:0;
+}
+#main input[type="submit"]:hover
+{
+    background-color:#b68b49;
+}
+#jobsearch_widget input
+{
+    width:100%;
+}
+.download-link
+{
+    
+}
+.blackbtn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.blackbtn .avia-button:hover
+{
+    background-color:#000 !important;
+    color: #fff !important;
+}
+.whitebtn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+     background-color:#fff !important;
+    color: #000 !important;
+}
+.whitebtn .avia-button:hover
+{
+    background-color:#fff !important;
+    color: #000 !important;
+}
+.c444444btn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#003169 !important;
+    color: #fff !important;
+    border-color:#003169 !important;
+    margin-right: 5px;
+}
+.c444444btn .avia-button:hover
+{
+    background-color:#003169 !important;
+    color: #fff !important;
+    border-color:#003169 !important;
+}
+
+.testibutton .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#003169 !important;
+    color: #fff !important;
+    border-color:#003169 !important;
+    margin-right: 5px;
+}
+.testibutton .avia-button:hover
+{
+    background-color:#003169 !important;
+    color: #fff !important;
+    border-color:#003169 !important;
+}
+.essdc444444btn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#444444 !important;
+    color: #fff !important;
+}
+.essdc444444btn .avia-button:hover
+{
+    background-color:#444444 !important;
+    color: #fff !important;
+}
+.c111183btn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#111183 !important;
+    color: #fff !important;
+}
+.c111183btn .avia-button:hover
+{
+    background-color:#111183 !important;
+    color: #fff !important;
+}
+.caf0126btn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#af0126 !important;
+    color: #fff !important;
+}
+.caf0126btn .avia-button:hover
+{
+    background-color:#af0126 !important;
+    color: #fff !important;
+}
+.c25b538btn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#25b538 !important;
+    color: #fff !important;
+}
+
+.c25b538btn .avia-button:hover
+{
+    background-color:#d6a353 !important;
+    color: #fff !important;
+}
+.d6a353btn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#d6a353 !important;
+    color: #fff !important;
+}
+.d6a353btn .avia-button:hover
+{
+    background-color:#d6a353  !important;
+    color: #fff !important;
+}
+
+.z006384btn .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:#006384!important;
+    color: #fff !important;
+}
+.z006384btn .avia-button:hover
+{
+    background-color:#006384 !important;
+    color: #fff !important;
+}
+
+
+.testimonial-slider .avia-button
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+     background-color:#003169 !important;
+    color: #fff !important;
+     border-color:#003169 !important;
+}
+
+.testimonial-slider .avia-button:hover
+{
+    background-color:#003169 !important;
+    color: #fff !important;
+    border-color:#003169 !important; 
+}
+
+/* -----------------------------------------------------------------------------
+   16.0 - Testimonials Slider and Page Styles
+------------------------------------------------------------------------------*/
+#eventpg {
+    font-family: 'Playfair Display', serif;
+}
+#eventpg h2 a {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 2em !important;   
+}
+.template-page .template-blog .entry-content-wrapper h1, .entry-content-wrapper h1 a,  .template-page .template-blog .entry-content-wrapper h2, .entry-content-wrapper h2 a {
+    font-size: 1.5em;
+    color: #edae44 !important;
+}
+.template-blog .post-entry-last .post_delimiter {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+}
+.post-meta-infos {
+    font-sizes: 1em; 
+}
+#testimonial-body blockquote p
+{
+    font-family: 'Merriweather', serif;
+}
+#testimonial-body blockquote
+{
+    border-left-width:0;
+        padding-left: 15%;
+    padding-right: 15%;
+    
+}
+#testimonial-body blockquote:before
+{
+    content: "";
+    border-top-width: 2px;
+    border-top-color: #d6a353;
+    border-top-style: solid;
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 40px; 
+}
+#testimonial-body blockquote:after
+{
+    content: "";
+    border-bottom-width: 2px;
+    border-bottom-color: #d6a353;
+    border-bottom-style: solid;
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 40px; 
+}
+.avia_desktop .av-hover-overlay-active .av-masonry-image-container {
+opacity: 1;
+}
+.avia_desktop .av-inner-masonry:before {
+    content:"";
+    display:flex;
+    position:absolute;
+    background-color:black;
+    height:100%;
+    width:100%;
+    opacity:0;
+    -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+    z-index:2;
+}
+.avia_desktop .av-inner-masonry:hover:before {
+    opacity:.7;
+}
+.avia_desktop .av-inner-masonry-content
+{
+    background-color:transparent !important;
+}
+
+.avia_desktop .av-inner-masonry-content .avia-arrow
+{
+    display:none;
+}
+.testimonial-jobtitle
+{
+    display: block;
+    font-size: 13px;
+    line-height: 12px;
+    color: #fff;
+    margin-bottom: 10px; 
+}
+#testimonial-main-slider h1
+{
+    color:#f3bc65;
+    
+}
+#testimonial-main-slider p
+{
+    font-weight:bold;
+    color:#fff;
+    font-size:1em;
+}
+#testimonial-main-masonry .av-inner-masonry-content-pos-content h3,#testimonial-main-masonry .av-inner-masonry-content-pos-content .av-masonry-entry-content
+{
+    color:#fff;
+    font-size:1.35em;
+}
+
+#testimonial-main-masonry .av-inner-masonry-content-pos-content h3
+{
+    font-size:2em;
+    color: #edae44 !important;
+}
+#testimonial-main-masonry .av-inner-masonry-content-pos-content .av-masonry-entry-content:before
+{
+    content:"“";
+    position:absolute;
+    font-size: 100px;
+    font-family: serif;
+    bottom: 30px;
+    z-index: -1;
+    color: #fff;
+    opacity: .3;
+}
+#testimonial-main-masonry .av-inner-masonry-content-pos-content .av-masonry-entry-content:after
+{
+    content:"”";
+    position:absolute;
+    font-size: 100px;
+    font-family: serif;
+    right: 20px;
+    z-index: -1;
+    color: #fff;
+    opacity: .3;
+    bottom:0px;
+}
+#testimonial-body p
+{
+    font-size: 16px;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+.testimonial-body .template-page
+{
+    padding-top:0;
+    padding-bottom:0;
+    background-color:#fff;
+}
+.testimonial-body .flex_column
+{
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    top: -100px;
+}
+.testimonial-body .avia_codeblock > div
+{
+    font-size:0.8em;
+    font-weight:bold;
+}
+.testimonial-body h1
+{
+    font-size:3em;
+    color:#003169 !important;
+    text-transform: none !important; 
+    margin-bottom: 30px;
+}
+/*.slideshow_caption {
+    width: 400px !important;
+    text-align: center;
+}*/
+
+.testimonial-slider blockquote p
+{
+    font-size:20px;
+    color:#000;
+    text-align:center;
+    line-height: 1.5em;
+}
+.testimonial-slider blockquote
+{
+    border-left:none;
+    position:relative;
+}
+.testimonial-slider blockquote:before
+{
+    content:"“";
+    position:absolute;
+    font-size: 200px;
+    font-family: serif;
+    top: 55px;
+    left:0px;
+    z-index: -1;
+    color: #CECECE;
+}
+.testimonial-slider blockquote:after
+{
+    content:"”";
+    position:absolute;
+    font-size: 200px;
+    font-family: serif;
+    right: 0px;
+    z-index: -1;
+    color: #CECECE;
+}
+.testimonial-slider h3
+{
+    font-size:2.3em;
+    font-weight:bold;
+    color:rgba(22,22,22,1) !important;
+}
+.testimonial-slider h4
+{
+    color: #dbaa61 !important;
+    font-size:1em;
+}
+.testimonial-slider .avia-button
+{
+    color:#000;
+    text-decoration:none !important;
+    margin-top: 20px;
+    
+}
+.testimonial-slider .slideshow_caption
+{
+    width:50%;
+}
+.testimonial-slider .avia-caption-content  {
+    background-color: rgba(255,255,255,0.65);
+    padding: 20px 5px 30px 20px;   
+}
+#testimonial-body blockquote p
+ {
+     font-size: 18px !important; 
+     color: #303030 !important;
+     border-color:none; 
+     
+ }
+/* -----------------------------------------------------------------------------
+   17.0 - Career Guides and Gallery
+------------------------------------------------------------------------------*/
+#career-guide h1
+{
+    color:#edae44 !important;
+    font-size: 2em;
+    text-transform: capitalize; 
+}
+#career-guide h3
+{
+    color:#edae44 !important;
+    font-size: 22px;
+}
+#career-guide p
+{
+    font-size: 15px !important;
+}
+
+#gallerypg h1
+{
+    color:#edae44 !important;
+    font-size: 2em;
+    text-transform: capitalize; 
+}
+#gallerypg h3
+{
+    color:#edae44 !important;
+    font-size: 22px;
+}
+#gallerypg p
+{
+    font-size: 15px !important;
+}
+
+/* -----------------------------------------------------------------------------
+   18.0 - Others
+------------------------------------------------------------------------------*/
+.alternate_color {
+    background-color: #FFFFFF;
+    /*color: #303030;*/
+    border-top: 1px solid #CACACA !important;
+}
+.contact-1 {
+   font-size: 15px;
+   margin: 10px 0;
+}
+#top #header.av_minimal_header .main_menu ul:first-child >li > ul, #top #header.av_minimal_header .main_menu .avia_mega_div > .sub-menu {
+   border-top: solid #003169 5px;
+   -webkit-box-shadow: -13px 13px 12px -8px rgba(0,0,0,0.16);
+   -moz-box-shadow: -13px 13px 12px -8px rgba(0,0,0,0.16);
+   box-shadow: -13px 13px 12px -8px rgba(0,0,0,0.16);
+}
+#top .avia_ajax_form .text_input {
+    padding: 15px 20px 18px 20px;
+}
+
+#avia_0_1 .home-newsletter-signup-bar .wpcf7-form-control .text_input {
+    padding: 15px 20px 18px 20px;
+}
+#comments span, .minitext, .form-allowed-tags, #reply-title small, #commentform label {
+    font-size: 13px; 
+}
+#header_main .main_menu > div > ul > li > ul > li > a:hover {
+    background-color: #003169 ;
+    color: white !important;
+}
+#header_main #menu-item-545 > ul > li > ul :hover{
+    background-color: #003169 ;
+    color: white !important;
+}
+.page-id-75 #main .home-newsletter-signup-bar input[type="submit"] {
+    background-color: #444444 !important;
+}
+.page-id-79 #main .home-newsletter-signup-bar input[type="submit"] {
+    background-color: #111183 !important;
+}
+.page-id-77 #main .home-newsletter-signup-bar input[type="submit"] {
+    background-color: #25b538 !important;
+}
+.page-id-2112 #main .home-newsletter-signup-bar input[type="submit"] {
+    background-color: #fcb134 !important;
+}
+.page-id-81 #main .home-newsletter-signup-bar input[type="submit"] {
+    background-color: #af0126 !important;
+}
+
+
+.footer_color .button, .footer_color #submit, .footer_color input[type='submit'] {
+    background-color: #d6a353;
+    border: 1px solid #d6a353; 
+    color: #fff; 
+}
+.footer_color .button, .footer_color #submit, .footer_color input[type='submit']: hover {
+    background-color: #B38844;
+    border: 1px solid #B38844; 
+    color: #fff; 
+}
+
+#contactevent p{
+    margin: 0 !important; 
+}
+
+#contactevent {
+    margin: 0 !important; 
+}
+
+
+#data-privacy-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+#data-privacy-tooltip .tooltiptext {
+    opacity: 0;
+    width: 500px;
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    z-index: -100;
+    right: -25px;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-transition: opacity .3s; /* Safari */
+    transition: opacity .3s;
+}
+
+#data-privacy-tooltip:hover .tooltiptext {
+    opacity:1;
+    z-index:1;
+}
+
+@media (max-width: 536px) {
+    #data-privacy-tooltip .tooltiptext {
+        width: 300px;
+        right: -90px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 379px) {
+    #data-privacy-tooltip .tooltiptext {
+        width: 300px;
+        right: -40px;
+        line-height: 15px;
+    }
+}
