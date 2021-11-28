@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\user;
 
 use App\Http\Controllers\Controller;
+use App\News;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
@@ -14,17 +15,18 @@ class NewsController extends Controller
      */
     public function index()
     {
-        return view('user.news.index');
+        $news = News::all();
+        return view('user.news.index',compact('news'));
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function detailNews()
+    
+    public function detail($id)
     {
-        return view('user.news.detail-news');
+        $news = News::find($id);
+        $recent = News::orderBy('id', 'desc')->limit(5)
+        ->get();
+        
+        return view('user.news.details-news',compact('news','recent'));
     }
 
     /**
@@ -67,7 +69,7 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**

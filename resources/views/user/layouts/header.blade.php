@@ -14,8 +14,8 @@
     <div id='header_main' class='container_wrap container_wrap_logo'>
 
         <div class='container av-logo-container'>
-            <div class='inner-container'><strong class='logo'><a href=''><img height='100' width='300' src=''
-                            alt='John Clements' /></a></strong>
+            <div class='inner-container'><strong class='logo'><a href='/'><img height='100' width='300' src='{{ asset('assets/vector.jpg') }}'
+                            alt='' /></a></strong>
                 <nav class='main_menu' data-selectname='Select a page' role="navigation" itemscope="itemscope"
                     itemtype="">
                     <div class="avia-menu av-main-nav-wrap">
@@ -35,13 +35,13 @@
                             </li>
                             <li id="menu-item-545"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-2">
-                                <a  href="/" ><span
+                                <a  href="{{ route('team') }}" ><span
                                         class="avia-bullet"></span><span class="avia-menu-text">TEAM</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span
                                                 class="avia-arrow"></span></span></span></a>
                             </li>
                             <li id="menu-item-545"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-2">
-                                <a  href="/" ><span
+                                <a  href="{{ route('service') }}" ><span
                                         class="avia-bullet"></span><span class="avia-menu-text">SERVICES</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span
                                                 class="avia-arrow"></span></span></span></a>
                             </li>
@@ -70,4 +70,4 @@
 
     <!-- end header -->
 </header>
-<div class='av-siteloader-wrap  av-transition-with-logo'><div class='av-siteloader-inner'><div class='av-siteloader-cell'><img class='av-preloading-logo' src='wp-content/uploads/2017/03/JC-Logo_No-BG-1-300x109.png' alt='Loading' title='Loading' /><div class='av-siteloader'><div class='av-siteloader-extra'></div></div></div></div></div>
+<div class='av-siteloader-wrap  av-transition-with-logo'><div class='av-siteloader-inner'><div class='av-siteloader-cell'><img class='av-preloading-logo' src='{{ asset('assets/vector.jpg') }}' alt='Loading' title='Loading' /><div class='av-siteloader'><div class='av-siteloader-extra'></div></div></div></div></div>

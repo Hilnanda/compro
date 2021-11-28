@@ -63,7 +63,7 @@ class BannerController extends Controller
         $banner->update($request->all());
        }
         
-        return back()->with('Sukses', 'Berhasil menambahkan data!');
+        return back()->with('Success', 'Successfully added data!');
     }
 
     /**

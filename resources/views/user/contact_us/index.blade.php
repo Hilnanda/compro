@@ -42,10 +42,8 @@
                                                     itemtype="https://schema.org/CreativeWork">
                                                     <div class='avia_textblock home-contactus av_inherit_color'
                                                         itemprop="text">
-                                                        <div class="contact-1">The John Clements Hub</div>
-                                                        <div class="contact-1">14th Floor, LKG Tower 6801<br />
-                                                            Ayala Avenue<br />
-                                                            Makati City Philippines</div>
+                                                        {{-- <div class="contact-1">The John Clements Hub</div> --}}
+                                                        <div class="contact-1">{!! $contact->alamat_contact_us !!}</div>
                                                     </div>
                                                 </section>
                                             </div>
@@ -83,13 +81,19 @@
                                                 </section>
                                             </div>
                                         </div>
+
+
+                                        
                                         <div class="col-md-6">
+                                            @foreach ($sosmed as $item)
+                                                
+                                            <a href="{{ $item->url_medsos }}" target="_blank">
                                             <div class="flex_column av_two_fifth  flex_column_div av-zero-column-padding first  avia-builder-el-110  el_after_av_textblock  el_before_av_three_fifth  column-top-margin"
                                                 style='border-radius:0px;'>
                                                 <span
                                                     class="av_font_icon avia_animate_when_visible av-icon-style-  av-no-color avia-icon-pos-right "
                                                     style="">
-                                                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                                    {!! $item->icon_medsos !!}
                                                 </span>
                                             </div>
                                             <div class="flex_column av_three_fifth  flex_column_div av-zero-column-padding   avia-builder-el-112  el_after_av_two_fifth  el_before_av_two_fifth  column-top-margin"
@@ -98,30 +102,13 @@
                                                     itemtype="https://schema.org/CreativeWork">
                                                     <div class='avia_textblock home-contactus av_inherit_color'
                                                         itemprop="text">
-                                                        <div style="margin-left: -20px">Instagram</div>
+                                                        <div style="margin-left: -20px">{{ $item->nama_medsos }}</div>
                                                         
                                                     </div>
                                                 </section>
                                             </div>
-                                            <div class="flex_column av_two_fifth  flex_column_div av-zero-column-padding first  avia-builder-el-110  el_after_av_textblock  el_before_av_three_fifth  column-top-margin"
-                                                style='border-radius:0px;'>
-                                                <span
-                                                    class="av_font_icon avia_animate_when_visible av-icon-style-  av-no-color avia-icon-pos-right "
-                                                    style="">
-                                                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                                                </span>
-                                            </div>
-                                            <div class="flex_column av_three_fifth  flex_column_div av-zero-column-padding   avia-builder-el-112  el_after_av_two_fifth  el_before_av_two_fifth  column-top-margin"
-                                                style='border-radius:0px; margin-bottom: 20px'>
-                                                <section class="av_textblock_section" itemscope="itemscope"
-                                                    itemtype="https://schema.org/CreativeWork">
-                                                    <div class='avia_textblock home-contactus av_inherit_color'
-                                                        itemprop="text">
-                                                        <div style="margin-left: -20px">Instagram</div>
-                                                        
-                                                    </div>
-                                                </section>
-                                            </div>
+                                            </a>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>

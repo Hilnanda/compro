@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\user;
 
+use App\About;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class AboutUsController extends Controller
      */
     public function index()
     {
-        return view('user.about_us.index');
+        $about = About::first();
+        return view('user.about_us.index',compact('about'));
     }
 
     /**

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\user;
 
+use App\ContactUs;
 use App\Http\Controllers\Controller;
+use App\Sosmed;
 use Illuminate\Http\Request;
 
 class ContactUsController extends Controller
@@ -14,7 +16,9 @@ class ContactUsController extends Controller
      */
     public function index()
     {
-        return view('user.contact_us.index');
+        $contact = ContactUs::first();
+        $sosmed = Sosmed::all();
+        return view('user.contact_us.index',compact('contact','sosmed'));
     }
 
     /**

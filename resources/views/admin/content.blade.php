@@ -1,21 +1,5 @@
 @push('top-style')
-    <style>
-        input.transparent-input,
-        input.file {
-            background-color: rgba(0, 0, 0, 0) !important;
-            border: none !important;
-            width: 100%;
-        }
 
-        input::-webkit-input-placeholder {
-            color: black;
-        }
-
-        input:focus {
-            outline: none;
-        }
-
-    </style>
     <!-- DataTables -->
     <link rel="stylesheet" href="{{ url('../../admin/plugins/datatables-bs4/css/dataTables.bootstrap4.css') }}">
 @endpush
@@ -50,32 +34,38 @@
                             class="btn btn-success form-control" data-toggle="modal">Add Content</a>
                         <div class="modal fade" id="modal-container-515165" role="dialog" aria-labelledby="myModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal-dialog modal-xl" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="myModalLabel">
-                                            Add About Us
+                                            Add Content
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal">
                                             <span aria-hidden="true">×</span>
                                         </button>
                                     </div>
-                                    <form action="/admin/about-us/create" method="POST">
+                                    <form action="/admin/content/create" method="POST" enctype="multipart/form-data">
                                         {{ csrf_field() }}
                                         <div class="modal-body">
                                             <div class="form-group">
 
                                                 <div class="row">
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
-                                                        <label for="name" class="control-label">Judul About Us</label>
-                                                        <input type="text" class="form-control" name="title_about"
-                                                            placeholder="Judul About Us">
+                                                        <label for="name" class="control-label">Title Content*</label>
+                                                        <input type="text" class="form-control" name="title_main_one"
+                                                            placeholder="Title Content" required>
                                                         <br>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
-                                                        <label for="name" class="control-label">Deskripsi About Us</label>
-                                                        <textarea id="editor1" name="desc_about" rows="10" cols="80">
-                                                                            </textarea><br>
+                                                        <label for="name" class="control-label">Content
+                                                            Description*</label>
+                                                        <textarea id="editor1" name="text_main_one" rows="10" cols="80">
+                                                                </textarea><br>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                                        <label for="name" class="control-label">Image Content*</label>
+                                                        <input type="file" class="form-control" name="image_main_one"
+                                                            required><br>
                                                     </div>
 
 
@@ -83,7 +73,7 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <input type="submit" class="btn btn-primary" value="Simpan">
+                                            <input type="submit" class="btn btn-success" value="Save">
 
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                                 Close
@@ -100,60 +90,36 @@
                                 <table id="example2" class="table table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>Banner Image</th>
-                                            <th>Text 1</th>
-                                            <th>Text 2</th>
-                                            <th>Text 3</th>
-                                            <th>Text 4</th>
-                                            <th>Text 5</th>
+                                            <th>No.</th>
+                                            <th>Content Image</th>
+                                            <th>Title Content</th>
+                                            <th>Description Content</th>
+                                            <th>Created At</th>
+                                            <th>Updated At</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td> 4</td>
-                                            <td> 4</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td> 4</td>
-                                            <td> 4</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td> 4</td>
-                                            <td> 4</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td> 4</td>
-                                            <td> 4</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
+                                        @foreach ($content as $item)
+                                            <tr>
+                                                <td>{{ $loop->index + 1 }}</td>
+                                                <td><a href="{{ asset('image/content/' . $item->image_main_one . '') }}"><img
+                                                            style="max-width: 250px"
+                                                            src="{{ asset('image/content/' . $item->image_main_one . '') }}"></a>
+                                                </td>
+                                                <td>{{ $item->title_main_one }}</td>
+                                                @if (strlen($item->text_main_one) < 100)
+                                                    <td>{!! $item->text_main_one !!}</td>
+                                                @else
+                                                    <td>{!! substr($item->text_main_one, 0, 100) . '.....' !!}</td>
+                                                @endif
+                                                <td>{{ $item->created_at }}</td>
+                                                <td>{{ $item->updated_at }}</td>
+                                                <td><a href="/content/{{$item->id}}" class="btn btn-warning btn-sm"><span class="font-weight-bold ml-1">Edit</span></a> 
+                                                    <a href="/admin/content/delete/{{$item->id}}" class="btn btn-danger btn-sm delete"><span
+                                                                    class="font-weight-bold ml-1">Delete</span></a></td>
+                                            </tr>
+                                        @endforeach
 
                                     </tbody>
 
@@ -195,8 +161,40 @@
                 'searching': true,
                 'ordering': true,
                 'info': true,
-                'autoWidth': false
+                'autoWidth': false,
+                'scrollX' : true
             })
+        })
+    </script>
+    <script src="{{ url('admin/bower_components/ckeditor/ckeditor.js') }}"></script>
+    <script>
+        $(function() {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor1')
+            //bootstrap WYSIHTML5 - text editor
+            $('.textarea').wysihtml5()
+        })
+        $(function() {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor2')
+            //bootstrap WYSIHTML5 - text editor
+            $('.textarea').wysihtml5()
+        })
+        $(function() {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor3')
+            //bootstrap WYSIHTML5 - text editor
+            $('.textarea').wysihtml5()
+        })
+        $(function() {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor4')
+            //bootstrap WYSIHTML5 - text editor
+            $('.textarea').wysihtml5()
         })
     </script>
 @endpush

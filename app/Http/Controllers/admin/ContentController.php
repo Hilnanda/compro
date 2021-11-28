@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\admin;
 
+use App\Content;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,11 @@ class ContentController extends Controller
      */
     public function index()
     {
-        return view('admin.content');
+        $content = Content::all();
+        return view(
+            'admin.content',
+            compact('content')
+        );
     }
 
     /**
@@ -22,9 +27,16 @@ class ContentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+
+
+        $input['image_main_one'] = time() . '.' . $request->image_main_one->getClientOriginalExtension();
+        $request->image_main_one->move(public_path('image/content'), $input['image_main_one']);
+        $input['title_main_one'] = $request->title_main_one;
+        $input['text_main_one'] = $request->text_main_one;
+        Content::create($input);
+        return back()->with('Success', 'Successfully added data!');
     }
 
     /**
@@ -57,7 +69,11 @@ class ContentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $content = Content::find($id);
+        return view(
+            'admin.content-edit',
+            compact('content')
+        );
     }
 
     /**
@@ -67,9 +83,34 @@ class ContentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $content = Content::find($request->id);
+
+        if ($request->image_main_one != '') {
+            $path = public_path() . '/image/content/';
+
+            //code for remove old file
+            if ($content->image_main_one != ''  && $content->image_main_one != null) {
+                $file_old = $path . $content->image_main_one;
+                unlink($file_old);
+            }
+
+            //upload new file
+            $file = $request->image_main_one;
+            $filename = $file->getClientOriginalName();
+            $file->move($path, $filename);
+            // dd($filename);
+            $input['image_main_one'] = $filename;
+            $input['title_main_one'] = $request->title_main_one;
+            $input['text_main_one'] = $request->text_main_one;
+            $content->update($input);
+        } else {
+            $content->update($request->all());
+        }
+
+
+        return redirect('../content')->with('Success', 'Successfully updated data!');
     }
 
     /**
@@ -80,6 +121,9 @@ class ContentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Content::find($id)->delete();
+
+
+        return back()->with('Success', 'Successfully delete data!');
     }
 }

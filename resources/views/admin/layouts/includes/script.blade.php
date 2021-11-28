@@ -35,8 +35,8 @@
 <script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js') }}"></script>
 
 <script>
-    @if(session('Sukses'))
-        swal("Sukses!", "{{ session('Sukses') }}", "success");
+    @if(session('Success'))
+        swal("Success!", "{{ session('Success') }}", "success");
     @endif
     @if(session('Gagal'))
         swal("Gagal!", "{{ session('Gagal') }}", "error");
@@ -46,8 +46,8 @@
         event.preventDefault();
         const url = $(this).attr('href');
         swal({
-            title: 'Apakah yakin ingin menghapus data?',
-            text: 'Data akan terhapus secara permanen',
+            title: 'Are you sure delete this data?',
+            text: 'Data will be permanently deleted!',
             icon: 'warning',
             buttons: ["Tidak", "Ya!"],
         }).then(function (value) {

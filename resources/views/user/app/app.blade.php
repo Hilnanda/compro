@@ -21,29 +21,29 @@
     <!-- Scripts/CSS and wp_head hook -->
     <link rel="stylesheet"
         href="{{ url('../maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css') }}" />
-    <title>Philippines&#039; Pioneer in Recruitment Services | John Clements Consultants, Inc.</title>
+    <title></title>
 
     <meta name="description"
-        content="A pioneer in talent acquisition, John Clements Consultants is committed to helping candidates and clients achieve their employment and recruitment needs." />
+        content="" />
     <meta name="robots" content="noodp" />
     <link rel="canonical" href="index.html" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title"
-        content="Philippines&#039; Pioneer in Recruitment Services | John Clements Consultants, Inc." />
+        content="" />
     <meta property="og:description"
-        content="A pioneer in talent acquisition, John Clements Consultants is committed to helping candidates and clients achieve their employment and recruitment needs." />
+        content="" />
     <meta property="og:url" content="index.html" />
-    <meta property="og:site_name" content="John Clements" />
+    <meta property="og:site_name" content="" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description"
-        content="A pioneer in talent acquisition, John Clements Consultants is committed to helping candidates and clients achieve their employment and recruitment needs." />
+        content="" />
     <meta name="twitter:title"
-        content="Philippines&#039; Pioneer in Recruitment Services | John Clements Consultants, Inc." />
+        content="" />
 
     <link rel='dns-prefetch' href='http://s.w.org/' />
-    <link rel="alternate" type="application/rss+xml" title="John Clements &raquo; Feed" href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="John Clements &raquo; Comments Feed"
+    <link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed"
         href="comments/feed/index.html" />
     <!-- This site uses the Google Analytics by MonsterInsights plugin v7.18.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
     <script src="http://www.googletagmanager.com/gtag/js?id=UA-93845121-1" type="text/javascript" data-cfasync="false"
@@ -217,7 +217,7 @@
     <script>
         function initialize() {
           var propertiPeta = {
-            center:new google.maps.LatLng(-8.5830695,116.3202515),
+            center:new google.maps.LatLng(-6.2334372,106.8210724),
             zoom:9,
             mapTypeId:google.maps.MapTypeId.ROADMAP
           };
@@ -226,7 +226,7 @@
           
           // membuat Marker
           var marker=new google.maps.Marker({
-              position: new google.maps.LatLng(-8.5830695,116.3202515),
+              position: new google.maps.LatLng(-6.2334372,106.8210724),
               map: peta
           });
         
@@ -303,42 +303,42 @@
 
     </style>
     <link rel='stylesheet' id='gtranslate-style-css'
-        href='wp-content/plugins/gtranslate/gtranslate-style24e006.css?ver=4.7.21' type='text/css' media='all' />
+        href='{{ url('wp-content/plugins/gtranslate/gtranslate-style24e006.css?ver=4.7.21')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='contact-form-7-css'
-        href='wp-content/plugins/contact-form-7/includes/css/styles4906.html?ver=4.7' type='text/css' media='all' />
+        href='{{ url('wp-content/plugins/contact-form-7/includes/css/styles4906.html?ver=4.7')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='dlm-frontend-css'
-        href='wp-content/plugins/download-monitor/assets/css/frontende006.css?ver=4.7.21' type='text/css' media='all' />
+        href='{{ url('wp-content/plugins/download-monitor/assets/css/frontende006.css?ver=4.7.21')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='remodal_css-css'
-        href='wp-content/themes/enfold-child/js/Remodal-1.1.1/dist/remodal16e2.css?ver=3.8.1484151146' type='text/css'
+        href='{{ url('wp-content/themes/enfold-child/js/Remodal-1.1.1/dist/remodal16e2.css?ver=3.8.1484151146')}}' type='text/css'
         media='all' />
     <link rel='stylesheet' id='remodal_theme-css'
-        href='wp-content/themes/enfold-child/js/Remodal-1.1.1/dist/remodal-default-theme16e2.css?ver=3.8.1484151146'
+        href='{{ url('wp-content/themes/enfold-child/js/Remodal-1.1.1/dist/remodal-default-theme16e2.css?ver=3.8.1484151146')}}'
         type='text/css' media='all' />
-    <link rel='stylesheet' id='avia-grid-css' href='wp-content/themes/enfold/css/grid77ae.css?ver=2' type='text/css'
+    <link rel='stylesheet' id='avia-grid-css' href='{{ url('wp-content/themes/enfold/css/grid77ae.css?ver=2')}}' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='avia-base-css' href='wp-content/themes/enfold/css/base77ae.css?ver=2' type='text/css'
+    <link rel='stylesheet' id='avia-base-css' href='{{ url('wp-content/themes/enfold/css/base77ae.css?ver=2')}}' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='avia-layout-css' href='wp-content/themes/enfold/css/layout77ae.css?ver=2' type='text/css'
+    <link rel='stylesheet' id='avia-layout-css' href='{{ url('wp-content/themes/enfold/css/layout77ae.css?ver=2')}}' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='avia-scs-css' href='wp-content/themes/enfold/css/shortcodes77ae.css?ver=2'
+    <link rel='stylesheet' id='avia-scs-css' href='{{ url('wp-content/themes/enfold/css/shortcodes77ae.css?ver=2')}}'
         type='text/css' media='all' />
     <link rel='stylesheet' id='avia-popup-css-css'
-        href='wp-content/themes/enfold/js/aviapopup/magnific-popup68b3.css?ver=1' type='text/css' media='screen' />
+        href='{{ url('wp-content/themes/enfold/js/aviapopup/magnific-popup68b3.css?ver=1')}}' type='text/css' media='screen' />
     <link rel='stylesheet' id='avia-media-css'
-        href='wp-content/themes/enfold/js/mediaelement/skin-1/mediaelementplayer68b3.css?ver=1' type='text/css'
+        href='{{ url('wp-content/themes/enfold/js/mediaelement/skin-1/mediaelementplayer68b3.css?ver=1')}}' type='text/css'
         media='screen' />
-    <link rel='stylesheet' id='avia-print-css' href='wp-content/themes/enfold/css/print68b3.css?ver=1' type='text/css'
+    <link rel='stylesheet' id='avia-print-css' href='{{ url('wp-content/themes/enfold/css/print68b3.css?ver=1')}}' type='text/css'
         media='print' />
     <link rel='stylesheet' id='avia-dynamic-css'
-        href='wp-content/uploads/dynamic_avia/enfold_childeca1.css?ver=5eb5e55752422' type='text/css' media='all' />
-    <link rel='stylesheet' id='avia-custom-css' href='wp-content/themes/enfold/css/custom77ae.css?ver=2' type='text/css'
+        href='{{ url('wp-content/uploads/dynamic_avia/enfold_childeca1.css?ver=5eb5e55752422')}}' type='text/css' media='all' />
+    <link rel='stylesheet' id='avia-custom-css' href='{{ url('wp-content/themes/enfold/css/custom77ae.css?ver=2')}}' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='avia-style-css' href='wp-content/themes/enfold-child/style16e2.css?ver=3.8.1484151146'
+    <link rel='stylesheet' id='avia-style-css' href='{{ url('wp-content/themes/enfold-child/style16e2.css?ver=3.8.1484151146')}}'
         type='text/css' media='all' />
-    <script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
-    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='{{ url('wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4')}}'></script>
+    <script type='text/javascript' src='{{ url('wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1')}}'></script>
     <script type='text/javascript'
-        src='wp-content/plugins/wordpress-bootstrap-css/resources/bootstrap-3.3.7/js/bootstrapc49a.js?ver=3.3.7-1'></script>
+        src='{{ url('wp-content/plugins/wordpress-bootstrap-css/resources/bootstrap-3.3.7/js/bootstrapc49a.js?ver=3.3.7-1')}}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var monsterinsights_frontend = {
@@ -364,18 +364,18 @@
     <script type='text/javascript' src='{{ url('wp-content/themes/enfold-child/js/data-privacy-tooltip4963.js?ver=1.1') }}'></script>
     <script type='text/javascript' src='{{ url('wp-content/themes/enfold/js/avia-compat77ae.js?ver=2') }}'></script>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{ url('wp-includes/wlwmanifest.xml')}}" />
     <meta name="generator" content="WordPress 4.7.21" />
     <link rel='shortlink' href='index.html' />
     <link rel="alternate" type="application/json+oembed"
-        href="wp-json/oembed/1.0/embed4d53.json?url=https%3A%2F%2Fwww.johnclements.com%2F" />
+        href="{{ url('wp-json/oembed/1.0/embed4d53.json?url=https%3A%2F%2Fwww.johnclements.com%2F')}}" />
     <link rel="alternate" type="text/xml+oembed"
-        href="wp-json/oembed/1.0/embed7d4e?url=https%3A%2F%2Fwww.johnclements.com%2F&amp;format=xml" />
+        href="{{ url('wp-json/oembed/1.0/embed7d4e?url=https%3A%2F%2Fwww.johnclements.com%2F&amp;format=xml')}}" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="alternate" type="application/rss+xml" title="John Clements RSS2 Feed" href="feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title=" RSS2 Feed" href="feed/index.html" />
     <link rel="pingback" href="xmlrpc.html" />
     <!--[if lt IE 9]><script src="https://www.johnclements.com/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
-    <link rel="icon" href="wp-content/uploads/2017/01/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/logo/Transparan.png') }}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
     <style type="text/css" id="wp-custom-css">
         #hbp-leadership h3,
@@ -414,6 +414,9 @@
         }
 
     </style>
+    @stack('top-style')
+    @include('admin.layouts.includes.style')
+    @stack('bottom-style')
 
 </head>
 <body id="top" class="home page-template-default page page-id-9 page-parent stretched arial-websave _arial "
@@ -799,12 +802,12 @@
         avia_framework_globals.ajaxurl = 'https://www.johnclements.com/wp-admin/admin-ajax.php';
         /* ]]> */
     </script>
-    <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.mine006.css?ver=4.7.21' type='text/css'
+    <link rel='stylesheet' id='dashicons-css' href='{{ url('wp-includes/css/dashicons.mine006.css?ver=4.7.21')}}' type='text/css'
         media='all' />
     <link rel='stylesheet' id='optin_front-css'
-        href='wp-content/plugins/wordpress-popup/assets/css/front4c56.css?ver=2.0.2' type='text/css' media='all' />
+        href='{{ url('wp-content/plugins/wordpress-popup/assets/css/front4c56.css?ver=2.0.2')}}' type='text/css' media='all' />
     <script type='text/javascript'
-        src='wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.html?ver=3.51.0-2014.06.20'></script>
+        src='{{ url('wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.html?ver=3.51.0-2014.06.20')}}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var _wpcf7 = {
@@ -816,8 +819,8 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts4906.html?ver=4.7'></script>
-    <script type='text/javascript' src='wp-includes/js/underscore.min4511.js?ver=1.8.3'></script>
+    <script type='text/javascript' src='{{ url('wp-content/plugins/contact-form-7/includes/js/scripts4906.html?ver=4.7')}}'></script>
+    <script type='text/javascript' src='{{ url('wp-includes/js/underscore.min4511.js?ver=1.8.3')}}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var Optins = [];
@@ -1014,10 +1017,10 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='wp-content/plugins/wordpress-popup/assets/js/front.min4963.js?ver=1.1'></script>
-    <script type='text/javascript' src='wp-content/themes/enfold/js/avia592e.js?ver=3'></script>
-    <script type='text/javascript' src='wp-content/themes/enfold/js/shortcodes592e.js?ver=3'></script>
-    <script type='text/javascript' src='wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min77ae.js?ver=2'>
+    <script type='text/javascript' src='{{ url('wp-content/plugins/wordpress-popup/assets/js/front.min4963.js?ver=1.1')}}'></script>
+    <script type='text/javascript' src='{{ url('wp-content/themes/enfold/js/avia592e.js?ver=3')}}'></script>
+    <script type='text/javascript' src='{{ url('wp-content/themes/enfold/js/shortcodes592e.js?ver=3')}}'></script>
+    <script type='text/javascript' src='{{ url('wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min77ae.js?ver=2')}}'>
     </script>
     <script type='text/javascript'>
         /* <![CDATA[ */

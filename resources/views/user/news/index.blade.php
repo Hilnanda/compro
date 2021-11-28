@@ -46,34 +46,31 @@
                 <div class='template-page content  av-content-full alpha units'>
                     <div class='post-entry post-entry-type-page post-entry-277'>
                         <div class='entry-content-wrapper clearfix'>
+                            @foreach ($news as $item)
                             <div class="flex_column av_two_fifth  flex_column_div av-zero-column-padding first  avia-builder-el-6  el_before_av_three_fifth  avia-builder-el-first  "
                                 style='border-radius:0px; '>
                                 <div class='avia-image-container  av-styling-   avia-builder-el-7  avia-builder-el-no-sibling   avia-align-center '
                                     itemscope="itemscope" itemtype="https://schema.org/ImageObject">
                                     <div class='avia-image-container-inner'><img class='avia_image '
-                                            src='../wp-content/uploads/2017/01/FMCG-1.jpg' alt='' title='FMCG-1'
+                                            src='{{ asset('image/news/' . $item->image_news . '') }}' alt='' title='FMCG-1'
                                             itemprop="contentURL" /></div>
                                 </div>
                             </div>
                             <div class="flex_column av_three_fifth  flex_column_div av-zero-column-padding   avia-builder-el-8  el_after_av_two_fifth  el_before_av_hr  "
                                 style='border-radius:0px; '>
-                                <section class="av_textblock_section" itemscope="itemscope"
-                                    itemtype="https://schema.org/CreativeWork">
+                                <section class="av_textblock_section" itemscope="itemscope">
                                     <div class='avia_textblock ' itemprop="text">
-                                        <h2 style="font-size: 20px"><a href="{{ route('detail-news') }}">The John Clements Guide to FMCG Careers</a>
+                                        <h2 style="font-size: 20px">
+                                            <a href="news/detail/{{ $item->id }}">{{ $item->title_news }}</a>
                                         </h2>
                                         <section class="av_textblock_section">
                                             <div class="avia_textblock ">
-                                                <p>If you&#8217;re looking for an exciting and dynamic working experience,
-                                                    look
-                                                    no further than the Fast Moving Consumer Goods industry! It offers
-                                                    numerous
-                                                    employment possibilities, values innovation and unique skills, and
-                                                    provides
-                                                    many opportunities to grow and expand your horizons. Get to know this
-                                                    industry by downloading our exclusive career guide, complete with tips
-                                                    for
-                                                    getting in and moving up!</p>
+                                                <p>
+                                                    @if (strlen($item->desc_news) < 200)
+                                                        {!! $item->desc_news !!}
+                                                    @else
+                                                        {!! substr($item->desc_news, 0, 200) . '.....' !!}
+                                                    @endif</p>
                                             </div>
                                         </section>
                                         <div
@@ -83,7 +80,7 @@
                                 </section>
                                 <div
                                     class='avia-button-wrap avia-button-left  avia-builder-el-10  el_after_av_textblock  avia-builder-el-last  c444444btn'>
-                                    <a href='the-john-clements-guide-to-fmcg-careers/index.html'
+                                    <a href='news/detail/{{ $item->id }}'
                                         class='avia-button  avia-icon_select-no avia-color-custom avia-size-small avia-position-left '
                                         style='background-color:#444444; border-color:#444444; color:#444444; '><span
                                             class='avia_iconbox_title'>READ MORE</span></a>
@@ -93,49 +90,8 @@
                                 class='hr hr-invisible  avia-builder-el-11  el_after_av_three_fifth  el_before_av_two_fifth  '>
                                 <span class='hr-inner '><span class='hr-inner-style'></span></span>
                             </div>
-                            <div class="flex_column av_two_fifth  flex_column_div av-zero-column-padding first  avia-builder-el-6  el_before_av_three_fifth  avia-builder-el-first  "
-                                style='border-radius:0px; '>
-                                <div class='avia-image-container  av-styling-   avia-builder-el-7  avia-builder-el-no-sibling   avia-align-center '
-                                    itemscope="itemscope" itemtype="https://schema.org/ImageObject">
-                                    <div class='avia-image-container-inner'><img class='avia_image '
-                                            src='../wp-content/uploads/2017/01/FMCG-1.jpg' alt='' title='FMCG-1'
-                                            itemprop="contentURL" /></div>
-                                </div>
-                            </div>
-                            <div class="flex_column av_three_fifth  flex_column_div av-zero-column-padding   avia-builder-el-8  el_after_av_two_fifth  el_before_av_hr  "
-                                style='border-radius:0px; '>
-                                <section class="av_textblock_section" itemscope="itemscope"
-                                    itemtype="https://schema.org/CreativeWork">
-                                    <div class='avia_textblock ' itemprop="text">
-                                        <h2 style="font-size: 20px"><a href="">The John Clements Guide to FMCG Careers</a>
-                                        </h2>
-                                        <section class="av_textblock_section">
-                                            <div class="avia_textblock ">
-                                                <p>If you&#8217;re looking for an exciting and dynamic working experience,
-                                                    look
-                                                    no further than the Fast Moving Consumer Goods industry! It offers
-                                                    numerous
-                                                    employment possibilities, values innovation and unique skills, and
-                                                    provides
-                                                    many opportunities to grow and expand your horizons. Get to know this
-                                                    industry by downloading our exclusive career guide, complete with tips
-                                                    for
-                                                    getting in and moving up!</p>
-                                            </div>
-                                        </section>
-                                        <div
-                                            class="avia-button-wrap avia-button-left avia-builder-el-86 el_after_av_textblock el_before_av_codeblock c444444btn">
-                                        </div>
-                                    </div>
-                                </section>
-                                <div
-                                    class='avia-button-wrap avia-button-left  avia-builder-el-10  el_after_av_textblock  avia-builder-el-last  c444444btn'>
-                                    <a href='the-john-clements-guide-to-fmcg-careers/index.html'
-                                        class='avia-button  avia-icon_select-no avia-color-custom avia-size-small avia-position-left '
-                                        style='background-color:#444444; border-color:#444444; color:#444444; '><span
-                                            class='avia_iconbox_title'>READ MORE</span></a>
-                                </div>
-                            </div>
+                            @endforeach
+                            
                         </div>
                     </div>
                 </div><!-- close content main div -->
